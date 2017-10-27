@@ -6,6 +6,7 @@ train <- read_csv("~/Kaggle/Titanic survival/train.csv")
 
 ##############################Part 1
 str(train)
+#makin sex as a factor
 train$Sex = as.factor(train$Sex)
 
 prop.table(table(train$Survived))
